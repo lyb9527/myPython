@@ -12,7 +12,7 @@ import pyodbc
 homedir = os.getcwd()
 socket.setdefaulttimeout(10)#设置socket操时时间，默认为60秒
 imageUrlFormart = "http://p2.vanclimg.com/product/%s/%s/%s/%s/Big/%s"
-connString='DRIVER={SQL Server};SERVER=db-user-read-02.vancldb.com;DATABASE=scm;UID=productReportuser;PWD=lsa)*)jgl345llalljld'
+connString=''
 sql ="""
 SELECT w.ProductCode,w.PhotoPath,w.ImageName
 FROM dbo.w_ProductPhotos w(NOLOCK)
